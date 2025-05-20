@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List | Safar</title>
+</head>
+<body>
+  <aside>
+    <div class="sidebar-title">Menu</div>
+    <button class="Home"><img class="homeSvg" src="./asset/home_22dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">Home</button>
+    <button id="addbutton" class="add"><img class="addTodo" src="./asset/add_22dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">Add</button>
+  </aside>
+
+  <main>
+    <header>
+      <div class="HeaderText">ToDoList</div>
+      <div class="IconsHeader">
+        <button id="dark" class="IconHeader"><img src="./asset/dark_mode_22dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="DarkMode" /></button>
+        <button id="light" class="IconHeader"><img src="./asset/clear_day_22dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="LightMode" /></button>
+      </div>
+    </header>
+
+    <section class="todo-app">
+      <dialog id="dialog">
+    <form method="dialog">
+        <h2>Add New Todo</h2>
+        <label for="todo-title">Title:</label>
+        <input type="text" id="todo-title" required>
+        <label for="todo-description">Description:</label>
+        <input type="text" id="todo-description" required>
+        <div class="dialog-buttons">
+            <button id="cancel-button" type="button">Cancel</button>
+            <button id="submit" type="submit">Add</button>
+        </div>
+    </form>
+</dialog>
+           
+
+      <div id="todo-container" class="todo-list">
+        <!-- Cards will go here -->
+      </div>
+    </section>
+  </main>
+<footer class="app-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>ToDoList</h3>
+      <p>Organize your tasks efficiently</p>
+      <div class="social-links">
+        <a href="https://github.com/PrimeSafar" aria-label="GitHub"><img src="./asset/394187_github_icon.svg" alt="GitHub"></a>
+        <a href="https://www.instagram.com/s0u.x?igsh=ZHhscm1jenk4bmFm" aria-label="Instagram"><img src="./asset/5296765_camera_instagram_instagram logo_icon.svg" alt="Instagram"></a>
+      </div> 
+    </div>
+    
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="footer-meta">
+      <span>© 2025 ToDoList App. All rights reserved by Safar.</span>
+      <span class="version">v1.2.0</span>
+    </div>
+    <div class="theme-selector">
+      <button id="footer-dark" class="theme-btn" aria-label="Dark mode">
+        <!-- <img src="./asset/dark_mode_22dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Dark mode"> -->
+      </button>
+      <button id="footer-light" class="theme-btn" aria-label="Light mode">
+        <!-- <img src="./asset/clear_day_22dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Light mode"> -->
+      </button>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
